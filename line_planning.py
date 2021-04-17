@@ -404,6 +404,9 @@ class line_planning_solver:
 
 if __name__ == "__main__":
 
+	month = 'april'
+	#month = 'march'
+	#month = 'feb'
 	np.random.seed(127)
 	
 
@@ -420,7 +423,7 @@ if __name__ == "__main__":
 	nb_p = 13851
 
 	Budget = 0
-	line_inst = line_instance(nb_lines = nb_l, nb_pass = nb_p, B = 0.95 * Budget, cost=1, max_length = 15, min_length = 8, proba = 0.1, capacity = 30, instance_category = 'manhattan', detour_factor = 3, method = 3, granularity = 1 , date = 'april')
+	line_inst = line_instance(nb_lines = nb_l, nb_pass = nb_p, B = 0.95 * Budget, cost=1, max_length = 15, min_length = 8, proba = 0.1, capacity = 30, instance_category = 'manhattan', detour_factor = 3, method = 3, granularity = 1 , date = month)
 
 
 
