@@ -1,6 +1,6 @@
 import numpy as np
 from gurobipy import *
-from instance_clean import *
+from instance import *
 import time
 from copy import deepcopy
 
