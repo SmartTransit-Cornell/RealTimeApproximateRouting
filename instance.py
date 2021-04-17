@@ -438,13 +438,8 @@ class line_instance:
 		f3 = open("manhattan_dist_3.txt", "r")
 		distances = np.loadtxt(f1) + np.loadtxt(f2) + np.loadtxt(f3)
 
-		#load bus stops nodes numbers
-		f1 = open("bus_stop_number2.txt", "r")
-		stops_arr = np.loadtxt(f1)
-		stops_floats = stops_arr.tolist()
-		stops = [int(stops_floats[i]) for i in range(len(stops_floats))]
-
 		
+	
 		#load OD_matrix
 		
 		#passengers = np.loadtxt(f)
