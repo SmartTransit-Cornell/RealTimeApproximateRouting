@@ -471,8 +471,8 @@ class line_instance:
 		#load candidate set of lines
 		#my_list = [line.split(' ') for line in open('all_lines_nodes_{}.txt'.format(nb_lines))]
 		#my_list = [line.split(' ') for line in open('all_lines_nodes_{}_c3.txt'.format(nb_lines))]
-		my_list = [line.split(' ') for line in open('all_lines_nodes_{}_c4.txt'.format(nb_lines))]
-		#my_list = [line.split(' ') for line in open('all_lines_nodes_{}_c5.txt'.format(nb_lines))]
+		#my_list = [line.split(' ') for line in open('all_lines_nodes_{}_c4.txt'.format(nb_lines))]
+		my_list = [line.split(' ') for line in open('all_lines_nodes_{}_c5.txt'.format(nb_lines))]
 
 		candidate_set_of_lines = [[int(float(i.strip())) for i in my_list[j]] for j in range(len(my_list))]
 
