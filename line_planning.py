@@ -126,9 +126,6 @@ class line_planning_solver:
 
 		master.Params.timeLimit = allowed_time
 
-		if self.line_instance.method != 0:
-			master.Params.Method = self.line_instance.method
-		print('LP config method =', master.Params.Method)
 		master.optimize()
 		
 		t_4 = 0
@@ -341,9 +338,6 @@ class line_planning_solver:
 		master.Params.Cuts = 0
 		master.Params.NoRelHeuristic = 0
 
-		#if method == 3:
-		#if self.line_instance.method == 3:
-			#master.Params.Method= 3
 
 		print('method', master.Params.Method)
 		t0 = time.time()
