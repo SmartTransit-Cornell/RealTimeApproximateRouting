@@ -433,6 +433,7 @@ class line_instance:
 
 
 		#load distance matrix for G
+		# Distance between each pair of nodes
 		f1 = open("manhattan_dist_1.txt", "r")
 		f2 = open("manhattan_dist_2.txt", "r")
 		f3 = open("manhattan_dist_3.txt", "r")
